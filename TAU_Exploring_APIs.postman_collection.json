@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "0559a62b-bd3b-43f2-ae47-ed5a968062f5",
+		"name": "TAU - Exploring APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Amazon",
+			"item": [
+				{
+					"name": "Amazon Search Text",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.5"
+							},
+							{
+								"key": "Origin",
+								"value": "https://www.amazon.in"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Referer",
+								"value": "https://www.amazon.in/"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"url": {
+							"raw": "https://completion.amazon.co.uk/api/2017/suggestions?session-id=260-1120207-2930417&customer-id=&request-id=9DCVA9A6V3R0JN3PT6Y5&page-type=Gateway&lop=en_IN&site-variant=desktop&client-info=amazon-search-ui&mid=A21TJRUUN4KGV&alias=aps&b2b=0&fresh=0&ks=71&prefix=bag&event=onKeyPress&limit=11&fb=1&suggestion-type=KEYWORD&suggestion-type=WIDGET&_=1596804879929",
+							"protocol": "https",
+							"host": [
+								"completion",
+								"amazon",
+								"co",
+								"uk"
+							],
+							"path": [
+								"api",
+								"2017",
+								"suggestions"
+							],
+							"query": [
+								{
+									"key": "session-id",
+									"value": "260-1120207-2930417"
+								},
+								{
+									"key": "customer-id",
+									"value": ""
+								},
+								{
+									"key": "request-id",
+									"value": "9DCVA9A6V3R0JN3PT6Y5"
+								},
+								{
+									"key": "page-type",
+									"value": "Gateway"
+								},
+								{
+									"key": "lop",
+									"value": "en_IN"
+								},
+								{
+									"key": "site-variant",
+									"value": "desktop"
+								},
+								{
+									"key": "client-info",
+									"value": "amazon-search-ui"
+								},
+								{
+									"key": "mid",
+									"value": "A21TJRUUN4KGV"
+								},
+								{
+									"key": "alias",
+									"value": "aps"
+								},
+								{
+									"key": "b2b",
+									"value": "0"
+								},
+								{
+									"key": "fresh",
+									"value": "0"
+								},
+								{
+									"key": "ks",
+									"value": "71"
+								},
+								{
+									"key": "prefix",
+									"value": "bag"
+								},
+								{
+									"key": "event",
+									"value": "onKeyPress"
+								},
+								{
+									"key": "limit",
+									"value": "11"
+								},
+								{
+									"key": "fb",
+									"value": "1"
+								},
+								{
+									"key": "suggestion-type",
+									"value": "KEYWORD"
+								},
+								{
+									"key": "suggestion-type",
+									"value": "WIDGET"
+								},
+								{
+									"key": "_",
+									"value": "1596804879929"
+								}
+							]
+						},
+						"description": "https://completion.amazon.co.uk/api/2017/suggestions?session-id=260-1120207-2930417&customer-id=&request-id=9DCVA9A6V3R0JN3PT6Y5&page-type=Gateway&lop=en_IN&site-variant=desktop&client-info=amazon-search-ui&mid=A21TJRUUN4KGV&alias=aps&b2b=0&fresh=0&ks=71&prefix=bag&event=onKeyPress&limit=11&fb=1&suggestion-type=KEYWORD&suggestion-type=WIDGET&_=1596804879929"
+					},
+					"response": []
+				},
+				{
+					"name": "Amazon Search Text - Parameters",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.5"
+							},
+							{
+								"key": "Origin",
+								"value": "https://www.amazon.in"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Referer",
+								"value": "https://www.amazon.in/"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"url": {
+							"raw": "https://completion.amazon.co.uk/api/2017/suggestions?mid=A21TJRUUN4KGV&alias=aps&prefix=bag&suggestion-type=KEYWORD",
+							"protocol": "https",
+							"host": [
+								"completion",
+								"amazon",
+								"co",
+								"uk"
+							],
+							"path": [
+								"api",
+								"2017",
+								"suggestions"
+							],
+							"query": [
+								{
+									"key": "mid",
+									"value": "A21TJRUUN4KGV"
+								},
+								{
+									"key": "alias",
+									"value": "aps"
+								},
+								{
+									"key": "prefix",
+									"value": "bag"
+								},
+								{
+									"key": "suggestion-type",
+									"value": "KEYWORD"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "RESTFULBOOKER",
+			"item": [
+				{
+					"name": "GET AUTH ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}"
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/auth",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/auth"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/booking"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Booking BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/1",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"1"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/booking/1"
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE BOOKING",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\" : \"Jim\",\n    \"lastname\" : \"Brown\",\n    \"totalprice\" : 111,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2018-01-01\",\n        \"checkout\" : \"2019-01-01\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}"
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/booking"
+					},
+					"response": []
+				},
+				{
+					"name": "PATH BOOKING BY ID",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "token=741ddeddcb90b14"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\" : \"jimmy\",\n    \"lastname\" : \"brownie\"\n}"
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/2",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"2"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/booking/1"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE BOOKING",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "token=741ddeddcb90b14"
+							}
+						],
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/1",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"1"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/booking/1"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT BOOKING",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "token=741ddeddcb90b14"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\" : \"James\",\n    \"lastname\" : \"Brown\",\n    \"totalprice\" : 111,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2018-01-01\",\n        \"checkout\" : \"2019-01-01\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}"
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/2",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"2"
+							]
+						},
+						"description": "https://restful-booker.herokuapp.com/booking/2"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "WorldTimeAPI",
+			"item": [
+				{
+					"name": "Get Timezones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://worldtimeapi.org/api/timezone/",
+							"protocol": "http",
+							"host": [
+								"worldtimeapi",
+								"org"
+							],
+							"path": [
+								"api",
+								"timezone",
+								""
+							]
+						},
+						"description": "http://worldtimeapi.org/api/timezone"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pacific Wallis Timezone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://worldtimeapi.org/api/timezone/Pacific/Wallis",
+							"protocol": "http",
+							"host": [
+								"worldtimeapi",
+								"org"
+							],
+							"path": [
+								"api",
+								"timezone",
+								"Pacific",
+								"Wallis"
+							]
+						},
+						"description": "http://worldtimeapi.org/api/timezone/Pacific/Wallis"
+					},
+					"response": []
+				},
+				{
+					"name": "GET Incorrect Timezone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://worldtimeapi.org/api/timezone/Pacific/Walli",
+							"protocol": "http",
+							"host": [
+								"worldtimeapi",
+								"org"
+							],
+							"path": [
+								"api",
+								"timezone",
+								"Pacific",
+								"Walli"
+							]
+						},
+						"description": "http://worldtimeapi.org/api/timezone/Pacific/Walli"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Kolkata Timezone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://worldtimeapi.org/api/timezone/Asia/Kolkata",
+							"protocol": "http",
+							"host": [
+								"worldtimeapi",
+								"org"
+							],
+							"path": [
+								"api",
+								"timezone",
+								"Asia",
+								"Kolkata"
+							]
+						},
+						"description": "http://worldtimeapi.org/api/timezone/Asia/Kolkata"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
